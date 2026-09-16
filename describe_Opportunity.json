@@ -1,0 +1,357 @@
+[
+  [
+    "Id",
+    "ID da oportunidade",
+    "id"
+  ],
+  [
+    "IsDeleted",
+    "Excluído",
+    "boolean"
+  ],
+  [
+    "AccountId",
+    "Nome da incorporadora",
+    "reference"
+  ],
+  [
+    "IsPrivate",
+    "Particular",
+    "boolean"
+  ],
+  [
+    "Name",
+    "Nome",
+    "string"
+  ],
+  [
+    "Description",
+    "Descrição",
+    "textarea"
+  ],
+  [
+    "StageName",
+    "Fase",
+    "picklist"
+  ],
+  [
+    "Amount",
+    "Valor",
+    "currency"
+  ],
+  [
+    "Probability",
+    "Probabilidade (%)",
+    "percent"
+  ],
+  [
+    "ExpectedRevenue",
+    "Valor esperado",
+    "currency"
+  ],
+  [
+    "TotalOpportunityQuantity",
+    "Quantidade",
+    "double"
+  ],
+  [
+    "CloseDate",
+    "Data de fechamento",
+    "date"
+  ],
+  [
+    "Type",
+    "Tipo de oportunidade",
+    "picklist"
+  ],
+  [
+    "NextStep",
+    "Próxima etapa",
+    "string"
+  ],
+  [
+    "LeadSource",
+    "Origem do lead",
+    "picklist"
+  ],
+  [
+    "IsClosed",
+    "Fechado",
+    "boolean"
+  ],
+  [
+    "IsWon",
+    "Ganhos",
+    "boolean"
+  ],
+  [
+    "ForecastCategory",
+    "Categoria de previsão",
+    "picklist"
+  ],
+  [
+    "ForecastCategoryName",
+    "Categoria de previsão",
+    "picklist"
+  ],
+  [
+    "CampaignId",
+    "ID da campanha",
+    "reference"
+  ],
+  [
+    "HasOpportunityLineItem",
+    "Tem item",
+    "boolean"
+  ],
+  [
+    "Pricebook2Id",
+    "ID do catálogo de preços",
+    "reference"
+  ],
+  [
+    "OwnerId",
+    "ID do proprietário",
+    "reference"
+  ],
+  [
+    "CreatedDate",
+    "Data de criação",
+    "datetime"
+  ],
+  [
+    "CreatedById",
+    "Criado pelo ID",
+    "reference"
+  ],
+  [
+    "LastModifiedDate",
+    "Data da última modificação",
+    "datetime"
+  ],
+  [
+    "LastModifiedById",
+    "Última modificação pelo ID",
+    "reference"
+  ],
+  [
+    "SystemModstamp",
+    "Modstamp do sistema",
+    "datetime"
+  ],
+  [
+    "LastActivityDate",
+    "Última atividade",
+    "date"
+  ],
+  [
+    "PushCount",
+    "Contagem de push",
+    "int"
+  ],
+  [
+    "LastStageChangeDate",
+    "Data da última mudança de fase",
+    "datetime"
+  ],
+  [
+    "FiscalQuarter",
+    "Trimestre fiscal",
+    "int"
+  ],
+  [
+    "FiscalYear",
+    "Ano fiscal",
+    "int"
+  ],
+  [
+    "Fiscal",
+    "Período fiscal",
+    "string"
+  ],
+  [
+    "ContactId",
+    "ID do contato",
+    "reference"
+  ],
+  [
+    "LastViewedDate",
+    "Data da última visualização",
+    "datetime"
+  ],
+  [
+    "LastReferencedDate",
+    "Última data citada",
+    "datetime"
+  ],
+  [
+    "SyncedQuoteId",
+    "Id de Cotação",
+    "reference"
+  ],
+  [
+    "ContractId",
+    "ID do contrato",
+    "reference"
+  ],
+  [
+    "HasOpenActivity",
+    "Possui uma atividade aberta",
+    "boolean"
+  ],
+  [
+    "HasOverdueTask",
+    "Possui uma tarefa atrasada",
+    "boolean"
+  ],
+  [
+    "LastAmountChangedHistoryId",
+    "ID do histórico de oportunidades",
+    "reference"
+  ],
+  [
+    "LastCloseDateChangedHistoryId",
+    "ID do histórico de oportunidades",
+    "reference"
+  ],
+  [
+    "Budget_Confirmed__c",
+    "Budget Confirmed",
+    "boolean"
+  ],
+  [
+    "Discovery_Completed__c",
+    "Discovery Completed",
+    "boolean"
+  ],
+  [
+    "ROI_Analysis_Completed__c",
+    "ROI Analysis Completed",
+    "boolean"
+  ],
+  [
+    "Etapa_do_Processo__c",
+    "Etapa do Processo",
+    "picklist"
+  ],
+  [
+    "Loss_Reason__c",
+    "Loss Reason",
+    "picklist"
+  ],
+  [
+    "Fila_Atual__c",
+    "Fila Atual",
+    "picklist"
+  ],
+  [
+    "Status_do_Financeiro__c",
+    "Status do Financeiro",
+    "picklist"
+  ],
+  [
+    "Data_Hora_de_Entrada_na_Fila__c",
+    "Data/Hora de Entrada na Fila",
+    "datetime"
+  ],
+  [
+    "Data_Hora_Limite_SLA__c",
+    "Data/Hora Limite SLA",
+    "datetime"
+  ],
+  [
+    "SLA_da_Incorporadora_dias__c",
+    "SLA da Incorporadora (dias)",
+    "double"
+  ],
+  [
+    "SLA_em_Risco__c",
+    "SLA em Risco?",
+    "boolean"
+  ],
+  [
+    "Imovel_escolhido__c",
+    "Imóvel escolhido?",
+    "boolean"
+  ],
+  [
+    "Codigo_do_Imovel__c",
+    "Código do Imóvel",
+    "string"
+  ],
+  [
+    "Valor_do_Financiamento__c",
+    "Valor do Financiamento",
+    "currency"
+  ],
+  [
+    "Possui_Excecoes__c",
+    "Possui Exceções?",
+    "boolean"
+  ],
+  [
+    "Detalhe_das_Excecoes__c",
+    "Detalhe das Exceções",
+    "textarea"
+  ],
+  [
+    "Status_Sync_API__c",
+    "Status Sync API",
+    "picklist"
+  ],
+  [
+    "ultima_Sincronizacao__c",
+    "Última Sincronização",
+    "datetime"
+  ],
+  [
+    "ultimo_Erro_de_Integracao__c",
+    "Último Erro de Integração",
+    "textarea"
+  ],
+  [
+    "Cliente__c",
+    "Cliente",
+    "reference"
+  ],
+  [
+    "Empresa__c",
+    "Empresa",
+    "picklist"
+  ],
+  [
+    "Client_Search_Name__c",
+    "Nome do Cliente para Pesquisa",
+    "string"
+  ],
+  [
+    "Cliente_2__c",
+    "Cliente 2",
+    "reference"
+  ],
+  [
+    "Cliente_3__c",
+    "Cliente 3",
+    "reference"
+  ],
+  [
+    "Cliente_4__c",
+    "Cliente 4",
+    "reference"
+  ],
+  [
+    "Analise_de_Credito__c",
+    "Análise de Crédito",
+    "reference"
+  ],
+  [
+    "CPF_do_Cliente__c",
+    "CPF do Cliente",
+    "string"
+  ],
+  [
+    "Pasta_com_Documentos__c",
+    "Pasta com Documentos",
+    "url"
+  ]
+]

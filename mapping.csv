@@ -1,0 +1,173 @@
+﻿coluna_planilha;objeto_destino;campo_destino;campo_api_repasse;confianca;observacao
+Data Inclusão;Repasse__c;Data_Cria_o_de_Repasse__c;-;média;Não é setado pela API hoje (RepasseService não usa esse campo). Teria que ser um PATCH pós-criação.
+Assessoria;Repasse__c;Empresa__c;empresa;média;Payload exige 'empresa' (picklist). Confirmar se 'ASSINO CRÉDITO IMOBILIÁRIO' é um valor válido do picklist Empresa__c.
+Número;Repasse__c;ID_da_Incorporadora__c;idIncorporadora;média;Campo usado para detectar duplicidade de Repasse (findRepasseExistente). Confirmar se 'Número' da planilha é de fato o identificador do processo na incorporadora.
+Regional;-;-;-;baixa;Sem campo correspondente em Repasse__c.
+Cidade do Empreendimento;Empreendimento__c;(fora do escopo);-;baixa;Pertenceria ao cadastro de Empreendimento__c, não ao Repasse__c/Contact analisados.
+Empreendimento;Repasse__c;Empreendimento__c (lookup);empreendimento.nome;alta;API cria/encontra o Empreendimento pelo nome (findOrCreateEmpreendimento).
+Bloco;Repasse__c;Torre__c;torre;alta;Extrair só a letra/identificador do bloco (ex: "A"), não o texto completo da planilha (ex: "SOUL SANTANA - TORRE A"). Confirmado no lote de teste (Repasse a0HNp000005PykTMAS).
+Dt habite-se bloco;-;-;-;baixa;Sem campo correspondente em Repasse__c.
+Vagas Garagem;-;-;-;baixa;Sem campo correspondente em Repasse__c.
+Unidade;Repasse__c;Unidade_Incorporadora__c / Unidade__c;unidade;alta;API grava o valor completo em Unidade_Incorporadora__c (texto, máx 10 caracteres) e só os dígitos em Unidade__c (numérico, cadastro Caixa/SIOPI).
+Grupo de Etapa;-;-;-;baixa;"Não há picklist genérico em Repasse__c; etapas ficam nos objetos filhos (Formularios__c/Juridico__c/Contrato__c/Registro__c), fora do escopo pedido."
+Etapa do Processo;-;-;-;baixa;Mesmo caso acima.
+Motivo;-;-;-;baixa;Repasse__c tem vários picklists de motivo específicos (Motivo_Distrato__c, Motivo_Pausado_Repasse__c etc.) mas nenhum campo genérico 'Motivo'.
+Dt. inclusão etapa;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Prazo da etapa;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Prazo da Etapa (Dias);-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Progresso;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Inadimplente;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Banco Empreend.;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Data retorno cliente;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Associativo;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Lote Associativo;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Banco;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Restrição cadastral?;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Utilização FGTS?;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Tipo Renda;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Data da Venda;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Data emissão do contrato;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Previsão Assinatura;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Data Assinatura Cliente;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Data Congelamento;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Data Envio Banco;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Data Pgto. VMD;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Valor original contrato (VGV - Valor Geral da Venda);-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Valor atualizado do contrato;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Saldo Devedor;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Total pago contratual;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Total pago não contratual;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Total pago contrato;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Percentual pro soluto;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Valor juros;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Valor multa;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Valor avaliação;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Valor terreno;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Valor Subsídio;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Valor FGTS;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Financiamento;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Valor Recurso Próprio;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Valor subsídio negociado;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Valor FGTS negociado;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Financiamento negociado;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Vlr. recurso próprio negociado;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Valor Total negociado;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Valor Renda Bruta;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Financ. creditado pelo banco;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Num. contrato ag. financ.;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Taxa banco;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Taxa VMD;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Valor outras taxas;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Valor CRI;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Valor ITBI;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Nº da prenotação;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Senha;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+RGI;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Nº do protocolo;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Data do start repasse;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Data de Entrada;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Data de qualificação;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Data de vencimento;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Data de liberação das chaves;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Data de validade;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Responsáveis pela pasta;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Responsável pela última alteração;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Corretor;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Data histórico;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+Observação;-;-;-;baixa;Sem campo correspondente em Repasse__c ou Contact — provavelmente vive em outro objeto (Formularios__c/Contrato__c/Juridico__c/Registro__c) ou não é suportado hoje.
+1º Proponente;Contact;LastName;proponente1.nome;alta;RepasseService grava o nome completo inteiro em LastName (não separa First/Last).
+CPF / CNPJ Prop (1º Prop);Contact;CPF__c / CNPJ__c;proponente1.cpf;alta;"API só aceita 'cpf' no payload; CNPJ (proponente pessoa jurídica) não é tratado hoje pela RepasseAPI."
+RG (1º Prop);Contact;RG__c;-;média;Não vem no payload da API — precisaria de PATCH pós-criação.
+Dt. emissão RG (1º Prop);Contact;-;-;baixa;Sem campo correspondente em Contact.
+Sexo (1º Prop);Contact;-;-;baixa;Contact tem GenderIdentity (picklist), mas é um campo de identidade de gênero, não 'sexo' no sentido de documento — não recomendo usar sem confirmar com a Anna.
+Nacionalidade (1º Prop);Contact;-;-;baixa;Sem campo correspondente em Contact.
+Local de nascimento (1º Prop);Contact;-;-;baixa;Sem campo correspondente em Contact.
+Dt. Nasc (1º Prop);Contact;Data_de_Nascimento__c;-;média;Existem DOIS campos de nascimento: Birthdate (padrão) e Data_de_Nascimento__c (custom). Confirmar qual está em uso real nos processos antes de popular os dois.
+Profissão (1º Prop);Contact;Profiss_o__c;-;média;Não vem no payload da API — precisaria de PATCH pós-criação.
+Estado Civil (1º Prop);Contact;Estado_Civil__c;-;média;Existem DOIS campos com o mesmo label 'Estado Civil' (Estado_Civil__c e Estado__c) — parece haver um campo legado duplicado. Confirmar qual usar.
+Regime Matrimônio (1º Prop);Contact;Regime__c;-;média;-
+Logradouro (1º Prop);Contact;Logradouro__c;-;média;-
+Cidade (1º Prop);Contact;MailingCity;-;baixa;"Não há campo custom 'Cidade'; só o padrão MailingCity/OtherCity."
+Bairro (1º Prop);Contact;Bairro__c;-;média;-
+CEP (1º Prop);Contact;CEP__c;-;média;Existe também o padrão MailingPostalCode — CEP__c parece ser o campo custom em uso nos outros processos (Logradouro__c/Bairro__c também são custom).
+Nome do Pai (1º Prop);Contact;-;-;baixa;Sem campo correspondente em Contact.
+Nome da Mãe (1º Prop);Contact;-;-;baixa;Sem campo correspondente em Contact.
+E-mail (1º Prop);Contact;Email;proponente1.email;alta;-
+E-mail 2 (1º Prop);Contact;-;-;baixa;Contact só tem um campo de e-mail.
+Tel. celular (1º Prop);Contact;MobilePhone;proponente1.telefone;alta;API grava o mesmo valor de 'telefone' em MobilePhone e Phone simultaneamente (ver findOrCreateProponente).
+Tel. residencial (1º Prop);Contact;HomePhone;-;média;Não vem no payload da API — precisaria de PATCH pós-criação.
+Tel. comercial (1º Prop);Contact;Phone;-;média;Cuidado: a API já usa Phone para o valor de 'telefone' (celular). Um PATCH posterior com o tel. comercial sobrescreveria isso.
+Tel. recado (1º Prop);Contact;Telefone_2__c;-;baixa;Melhor campo disponível, mas não é semanticamente 'recado'.
+1º Proponente (espelho);Repasse__c;Nome_Proponente_1__c / CPF_Proponente_1__c / Cliente_1__c (lookup);proponente1.nome / proponente1.cpf;alta;A API grava o nome/CPF também como texto direto no Repasse__c, além do lookup para o Contact.
+2º Proponente;Contact;LastName;proponente2.nome;alta;RepasseService grava o nome completo inteiro em LastName (não separa First/Last).
+CPF / CNPJ Prop (2º Prop);Contact;CPF__c / CNPJ__c;proponente2.cpf;alta;"API só aceita 'cpf' no payload; CNPJ (proponente pessoa jurídica) não é tratado hoje pela RepasseAPI."
+RG (2º Prop);Contact;RG__c;-;média;Não vem no payload da API — precisaria de PATCH pós-criação.
+Dt. emissão RG (2º Prop);Contact;-;-;baixa;Sem campo correspondente em Contact.
+Sexo (2º Prop);Contact;-;-;baixa;Contact tem GenderIdentity (picklist), mas é um campo de identidade de gênero, não 'sexo' no sentido de documento — não recomendo usar sem confirmar com a Anna.
+Nacionalidade (2º Prop);Contact;-;-;baixa;Sem campo correspondente em Contact.
+Local de nascimento (2º Prop);Contact;-;-;baixa;Sem campo correspondente em Contact.
+Dt. Nasc (2º Prop);Contact;Data_de_Nascimento__c;-;média;Existem DOIS campos de nascimento: Birthdate (padrão) e Data_de_Nascimento__c (custom). Confirmar qual está em uso real nos processos antes de popular os dois.
+Profissão (2º Prop);Contact;Profiss_o__c;-;média;Não vem no payload da API — precisaria de PATCH pós-criação.
+Estado Civil (2º Prop);Contact;Estado_Civil__c;-;média;Existem DOIS campos com o mesmo label 'Estado Civil' (Estado_Civil__c e Estado__c) — parece haver um campo legado duplicado. Confirmar qual usar.
+Regime Matrimônio (2º Prop);Contact;Regime__c;-;média;-
+Logradouro (2º Prop);Contact;Logradouro__c;-;média;-
+Cidade (2º Prop);Contact;MailingCity;-;baixa;"Não há campo custom 'Cidade'; só o padrão MailingCity/OtherCity."
+Bairro (2º Prop);Contact;Bairro__c;-;média;-
+CEP (2º Prop);Contact;CEP__c;-;média;Existe também o padrão MailingPostalCode — CEP__c parece ser o campo custom em uso nos outros processos (Logradouro__c/Bairro__c também são custom).
+Nome do Pai (2º Prop);Contact;-;-;baixa;Sem campo correspondente em Contact.
+Nome da Mãe (2º Prop);Contact;-;-;baixa;Sem campo correspondente em Contact.
+E-mail (2º Prop);Contact;Email;proponente2.email;alta;-
+E-mail 2 (2º Prop);Contact;-;-;baixa;Contact só tem um campo de e-mail.
+Tel. celular (2º Prop);Contact;MobilePhone;proponente2.telefone;alta;API grava o mesmo valor de 'telefone' em MobilePhone e Phone simultaneamente (ver findOrCreateProponente).
+Tel. residencial (2º Prop);Contact;HomePhone;-;média;Não vem no payload da API — precisaria de PATCH pós-criação.
+Tel. comercial (2º Prop);Contact;Phone;-;média;Cuidado: a API já usa Phone para o valor de 'telefone' (celular). Um PATCH posterior com o tel. comercial sobrescreveria isso.
+Tel. recado (2º Prop);Contact;Telefone_2__c;-;baixa;Melhor campo disponível, mas não é semanticamente 'recado'.
+2º Proponente (espelho);Repasse__c;Nome_Proponente_2__c / CPF_Proponente_2__c / Cliente_2__c (lookup);proponente2.nome / proponente2.cpf;alta;A API grava o nome/CPF também como texto direto no Repasse__c, além do lookup para o Contact.
+3º Proponente;Contact;LastName;proponente3.nome;alta;RepasseService grava o nome completo inteiro em LastName (não separa First/Last).
+CPF / CNPJ Prop (3º Prop);Contact;CPF__c / CNPJ__c;proponente3.cpf;alta;"API só aceita 'cpf' no payload; CNPJ (proponente pessoa jurídica) não é tratado hoje pela RepasseAPI."
+RG (3º Prop);Contact;RG__c;-;média;Não vem no payload da API — precisaria de PATCH pós-criação.
+Dt. emissão RG (3º Prop);Contact;-;-;baixa;Sem campo correspondente em Contact.
+Sexo (3º Prop);Contact;-;-;baixa;Contact tem GenderIdentity (picklist), mas é um campo de identidade de gênero, não 'sexo' no sentido de documento — não recomendo usar sem confirmar com a Anna.
+Nacionalidade (3º Prop);Contact;-;-;baixa;Sem campo correspondente em Contact.
+Local de nascimento (3º Prop);Contact;-;-;baixa;Sem campo correspondente em Contact.
+Dt. Nasc (3º Prop);Contact;Data_de_Nascimento__c;-;média;Existem DOIS campos de nascimento: Birthdate (padrão) e Data_de_Nascimento__c (custom). Confirmar qual está em uso real nos processos antes de popular os dois.
+Profissão (3º Prop);Contact;Profiss_o__c;-;média;Não vem no payload da API — precisaria de PATCH pós-criação.
+Estado Civil (3º Prop);Contact;Estado_Civil__c;-;média;Existem DOIS campos com o mesmo label 'Estado Civil' (Estado_Civil__c e Estado__c) — parece haver um campo legado duplicado. Confirmar qual usar.
+Regime Matrimônio (3º Prop);Contact;Regime__c;-;média;-
+Logradouro (3º Prop);Contact;Logradouro__c;-;média;-
+Cidade (3º Prop);Contact;MailingCity;-;baixa;"Não há campo custom 'Cidade'; só o padrão MailingCity/OtherCity."
+Bairro (3º Prop);Contact;Bairro__c;-;média;-
+CEP (3º Prop);Contact;CEP__c;-;média;Existe também o padrão MailingPostalCode — CEP__c parece ser o campo custom em uso nos outros processos (Logradouro__c/Bairro__c também são custom).
+Nome do Pai (3º Prop);Contact;-;-;baixa;Sem campo correspondente em Contact.
+Nome da Mãe (3º Prop);Contact;-;-;baixa;Sem campo correspondente em Contact.
+E-mail (3º Prop);Contact;Email;proponente3.email;alta;-
+E-mail 2 (3º Prop);Contact;-;-;baixa;Contact só tem um campo de e-mail.
+Tel. celular (3º Prop);Contact;MobilePhone;proponente3.telefone;alta;API grava o mesmo valor de 'telefone' em MobilePhone e Phone simultaneamente (ver findOrCreateProponente).
+Tel. residencial (3º Prop);Contact;HomePhone;-;média;Não vem no payload da API — precisaria de PATCH pós-criação.
+Tel. comercial (3º Prop);Contact;Phone;-;média;Cuidado: a API já usa Phone para o valor de 'telefone' (celular). Um PATCH posterior com o tel. comercial sobrescreveria isso.
+Tel. recado (3º Prop);Contact;Telefone_2__c;-;baixa;Melhor campo disponível, mas não é semanticamente 'recado'.
+3º Proponente (espelho);Repasse__c;Nome_Proponente_3__c / CPF_Proponente_3__c / Cliente_3__c (lookup);proponente3.nome / proponente3.cpf;alta;A API grava o nome/CPF também como texto direto no Repasse__c, além do lookup para o Contact.
+4º Proponente;Contact;LastName;proponente4.nome;alta;RepasseService grava o nome completo inteiro em LastName (não separa First/Last).
+CPF / CNPJ Prop (4º Prop);Contact;CPF__c / CNPJ__c;proponente4.cpf;alta;"API só aceita 'cpf' no payload; CNPJ (proponente pessoa jurídica) não é tratado hoje pela RepasseAPI."
+RG (4º Prop);Contact;RG__c;-;média;Não vem no payload da API — precisaria de PATCH pós-criação.
+Dt. emissão RG (4º Prop);Contact;-;-;baixa;Sem campo correspondente em Contact.
+Sexo (4º Prop);Contact;-;-;baixa;Contact tem GenderIdentity (picklist), mas é um campo de identidade de gênero, não 'sexo' no sentido de documento — não recomendo usar sem confirmar com a Anna.
+Nacionalidade (4º Prop);Contact;-;-;baixa;Sem campo correspondente em Contact.
+Local de nascimento (4º Prop);Contact;-;-;baixa;Sem campo correspondente em Contact.
+Dt. Nasc (4º Prop);Contact;Data_de_Nascimento__c;-;média;Existem DOIS campos de nascimento: Birthdate (padrão) e Data_de_Nascimento__c (custom). Confirmar qual está em uso real nos processos antes de popular os dois.
+Profissão (4º Prop);Contact;Profiss_o__c;-;média;Não vem no payload da API — precisaria de PATCH pós-criação.
+Estado Civil (4º Prop);Contact;Estado_Civil__c;-;média;Existem DOIS campos com o mesmo label 'Estado Civil' (Estado_Civil__c e Estado__c) — parece haver um campo legado duplicado. Confirmar qual usar.
+Regime Matrimônio (4º Prop);Contact;Regime__c;-;média;-
+Logradouro (4º Prop);Contact;Logradouro__c;-;média;-
+Cidade (4º Prop);Contact;MailingCity;-;baixa;"Não há campo custom 'Cidade'; só o padrão MailingCity/OtherCity."
+Bairro (4º Prop);Contact;Bairro__c;-;média;-
+CEP (4º Prop);Contact;CEP__c;-;média;Existe também o padrão MailingPostalCode — CEP__c parece ser o campo custom em uso nos outros processos (Logradouro__c/Bairro__c também são custom).
+Nome do Pai (4º Prop);Contact;-;-;baixa;Sem campo correspondente em Contact.
+Nome da Mãe (4º Prop);Contact;-;-;baixa;Sem campo correspondente em Contact.
+E-mail (4º Prop);Contact;Email;proponente4.email;alta;-
+E-mail 2 (4º Prop);Contact;-;-;baixa;Contact só tem um campo de e-mail.
+Tel. celular (4º Prop);Contact;MobilePhone;proponente4.telefone;alta;API grava o mesmo valor de 'telefone' em MobilePhone e Phone simultaneamente (ver findOrCreateProponente).
+Tel. residencial (4º Prop);Contact;HomePhone;-;média;Não vem no payload da API — precisaria de PATCH pós-criação.
+Tel. comercial (4º Prop);Contact;Phone;-;média;Cuidado: a API já usa Phone para o valor de 'telefone' (celular). Um PATCH posterior com o tel. comercial sobrescreveria isso.
+Tel. recado (4º Prop);Contact;Telefone_2__c;-;baixa;Melhor campo disponível, mas não é semanticamente 'recado'.
+4º Proponente (espelho);Repasse__c;Nome_Proponente_4__c / CPF_Proponente_4__c / Cliente_4__c (lookup);proponente4.nome / proponente4.cpf;alta;A API grava o nome/CPF também como texto direto no Repasse__c, além do lookup para o Contact.

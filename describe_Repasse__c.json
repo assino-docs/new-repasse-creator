@@ -1,0 +1,687 @@
+[
+  [
+    "Id",
+    "ID do registro",
+    "id"
+  ],
+  [
+    "OwnerId",
+    "ID do proprietário",
+    "reference"
+  ],
+  [
+    "IsDeleted",
+    "Excluído",
+    "boolean"
+  ],
+  [
+    "Name",
+    "Nome do Repasse",
+    "string"
+  ],
+  [
+    "RecordTypeId",
+    "ID do tipo de registro",
+    "reference"
+  ],
+  [
+    "CreatedDate",
+    "Data de criação",
+    "datetime"
+  ],
+  [
+    "CreatedById",
+    "Criado pelo ID",
+    "reference"
+  ],
+  [
+    "LastModifiedDate",
+    "Data da última modificação",
+    "datetime"
+  ],
+  [
+    "LastModifiedById",
+    "Última modificação pelo ID",
+    "reference"
+  ],
+  [
+    "SystemModstamp",
+    "Modstamp do sistema",
+    "datetime"
+  ],
+  [
+    "LastActivityDate",
+    "Data da última atividade",
+    "date"
+  ],
+  [
+    "LastViewedDate",
+    "Data da última visualização",
+    "datetime"
+  ],
+  [
+    "LastReferencedDate",
+    "Última data citada",
+    "datetime"
+  ],
+  [
+    "Status_do_Repasse__c",
+    "Status do Repasse",
+    "picklist"
+  ],
+  [
+    "CPF_FIADOR_1__c",
+    "CPF Fiador 1",
+    "string"
+  ],
+  [
+    "CPF_FIADOR_2__c",
+    "CPF Fiador 2",
+    "string"
+  ],
+  [
+    "FIADOR__c",
+    "Fiador",
+    "picklist"
+  ],
+  [
+    "NOME_FIADOR_1__c",
+    "Nome Fiador 1",
+    "string"
+  ],
+  [
+    "NOME_FIADOR_2__c",
+    "Nome Fiador 2",
+    "string"
+  ],
+  [
+    "RESPONSAVEL_CONFISSAO_DE_DIVIDA__c",
+    "Responsável Confissão de Dívida",
+    "picklist"
+  ],
+  [
+    "RESPONSAVEL_PELO_PAGAMENTO_CUSTAS__c",
+    "Responsável Pelo Pagamento Custas",
+    "picklist"
+  ],
+  [
+    "Repasse_Futuro__c",
+    "Repasse Futuro",
+    "reference"
+  ],
+  [
+    "Solicitacao_de_Documento__c",
+    "Solicitação de Documento",
+    "reference"
+  ],
+  [
+    "Reavaliacao__c",
+    "Reavaliação",
+    "reference"
+  ],
+  [
+    "Montagem_Repasse__c",
+    "Montagem Repasse",
+    "reference"
+  ],
+  [
+    "Debito_FGTS__c",
+    "Débito FGTS",
+    "reference"
+  ],
+  [
+    "Agendamento_Formularios__c",
+    "Agendamento Formulários",
+    "reference"
+  ],
+  [
+    "Atendimento_Formularios__c",
+    "Atendimento Formulários",
+    "reference"
+  ],
+  [
+    "Formularios_com_Pendencia__c",
+    "Formulários com Pendência",
+    "reference"
+  ],
+  [
+    "Montagem_Sistemas__c",
+    "Montagem Sistemas",
+    "reference"
+  ],
+  [
+    "Conferencia_Sistemas__c",
+    "Conferência Sistemas",
+    "reference"
+  ],
+  [
+    "Analise_CEHOP__c",
+    "Análise CEHOP",
+    "reference"
+  ],
+  [
+    "Confissao_de_Divida__c",
+    "Confissão de Dívida",
+    "reference"
+  ],
+  [
+    "Incorfomidade__c",
+    "Incorfomidade",
+    "reference"
+  ],
+  [
+    "Impedimento__c",
+    "Impedimento",
+    "reference"
+  ],
+  [
+    "Minuta__c",
+    "Minuta",
+    "reference"
+  ],
+  [
+    "ITBI__c",
+    "ITBI",
+    "reference"
+  ],
+  [
+    "Agendamento_de_Contrato__c",
+    "Agendamento de Contrato",
+    "reference"
+  ],
+  [
+    "Atendimento_de_Contrato__c",
+    "Atendimento de Contrato",
+    "reference"
+  ],
+  [
+    "Conferencia_Pos_Assinatura__c",
+    "Conferência Pós-Assinatura",
+    "reference"
+  ],
+  [
+    "Pendencia_Pos_Assinatura__c",
+    "Pendência Pós-Assinatura",
+    "reference"
+  ],
+  [
+    "Conferencia_de_Registro__c",
+    "Conferência de Registro",
+    "reference"
+  ],
+  [
+    "Previs_o_Retorno_Negocia_o__c",
+    "Previsão Retorno Negociação",
+    "datetime"
+  ],
+  [
+    "Revers_o__c",
+    "Reversão Distrato",
+    "boolean"
+  ],
+  [
+    "Previs_o_Retorno_Revers_o__c",
+    "Previsão Retorno Reversão",
+    "datetime"
+  ],
+  [
+    "Notifica_o_Distrato__c",
+    "Notificação Distrato",
+    "multipicklist"
+  ],
+  [
+    "Empreendimento__c",
+    "Empreendimento",
+    "reference"
+  ],
+  [
+    "Construtora__c",
+    "Construtora",
+    "reference"
+  ],
+  [
+    "Torre__c",
+    "Torre",
+    "string"
+  ],
+  [
+    "Unidade__c",
+    "Unidade SIOPI",
+    "double"
+  ],
+  [
+    "Oportunidade__c",
+    "Oportunidade",
+    "reference"
+  ],
+  [
+    "Tipo_de_Processo__c",
+    "Tipo de Assinatura",
+    "picklist"
+  ],
+  [
+    "ID_da_Incorporadora__c",
+    "ID da Incorporadora",
+    "string"
+  ],
+  [
+    "Nome_Proponente_1__c",
+    "Nome Proponente 1",
+    "string"
+  ],
+  [
+    "Nome_Proponente_2__c",
+    "Nome Proponente 2",
+    "string"
+  ],
+  [
+    "Nome_Proponente_3__c",
+    "Nome Proponente 3",
+    "string"
+  ],
+  [
+    "Nome_Proponente_4__c",
+    "Nome Proponente 4",
+    "string"
+  ],
+  [
+    "CPF_Proponente_1__c",
+    "CPF Proponente 1",
+    "string"
+  ],
+  [
+    "CPF_Proponente_2__c",
+    "CPF Proponente 2",
+    "string"
+  ],
+  [
+    "CPF_Proponente_3__c",
+    "CPF Proponente 3",
+    "string"
+  ],
+  [
+    "CPF_Proponente_4__c",
+    "CPF Proponente 4",
+    "string"
+  ],
+  [
+    "Sintese_Concluido__c",
+    "Síntese Concluído",
+    "picklist"
+  ],
+  [
+    "Sintese_Contrato__c",
+    "Síntese Contrato",
+    "picklist"
+  ],
+  [
+    "Sintese_Formulario__c",
+    "Síntese Formulário",
+    "picklist"
+  ],
+  [
+    "Sintese_Juridico__c",
+    "Síntese Jurídico",
+    "picklist"
+  ],
+  [
+    "Sintese_Limbo__c",
+    "Síntese Limbo",
+    "picklist"
+  ],
+  [
+    "Sintese_Registro__c",
+    "Síntese Registro",
+    "picklist"
+  ],
+  [
+    "Data_Criacao_Origem__c",
+    "Data Criação Origem",
+    "datetime"
+  ],
+  [
+    "Negociacao__c",
+    "Negociação",
+    "boolean"
+  ],
+  [
+    "Processo_Critico__c",
+    "Processo Crítico",
+    "boolean"
+  ],
+  [
+    "Data_de_Vencimento_Tratar_Internalizados__c",
+    "Vencimento - Tratar Internalizados",
+    "date"
+  ],
+  [
+    "Incorporadora__c",
+    "Incorporadora",
+    "reference"
+  ],
+  [
+    "Tem_2_Proponente__c",
+    "Tem 2º Proponente?",
+    "boolean"
+  ],
+  [
+    "Tem_3_Proponente__c",
+    "Tem 3º Proponente?",
+    "boolean"
+  ],
+  [
+    "Tem_4_Proponente__c",
+    "Tem 4º Proponente?",
+    "boolean"
+  ],
+  [
+    "An_lise_de_Cr_dito__c",
+    "Última Análise de Crédito",
+    "reference"
+  ],
+  [
+    "OperationalIdentifier__c",
+    "Identificador",
+    "string"
+  ],
+  [
+    "Empresa__c",
+    "Empresa",
+    "picklist"
+  ],
+  [
+    "Certificado__c",
+    "Certificado",
+    "reference"
+  ],
+  [
+    "Repasse_Por_Conta__c",
+    "Repasse Por Conta",
+    "boolean"
+  ],
+  [
+    "Data_Cria_o_de_Repasse__c",
+    "Data Criação de Repasse",
+    "date"
+  ],
+  [
+    "Motivo_Pausado_Repasse__c",
+    "Motivo Pausado Repasse",
+    "multipicklist"
+  ],
+  [
+    "Motivo_Pausado_Sistemas__c",
+    "Motivo Pausado Sistemas",
+    "multipicklist"
+  ],
+  [
+    "Vai_Mover_para_Pausado_Repasse__c",
+    "Vai Mover para Pausado Repasse?",
+    "picklist"
+  ],
+  [
+    "Vai_Mover_para_Pausado_Sistemas__c",
+    "Vai Mover para Pausado Sistemas?",
+    "picklist"
+  ],
+  [
+    "Poss_vel_Erro_Atualiza_o__c",
+    "Possível Erro Atualização",
+    "boolean"
+  ],
+  [
+    "Unidade_Habitacional__c",
+    "Unidade Habitacional",
+    "reference"
+  ],
+  [
+    "Atividades_Limbo__c",
+    "Atividades Limbo",
+    "reference"
+  ],
+  [
+    "Atividades_Formul_rio__c",
+    "Atividades Formulário",
+    "reference"
+  ],
+  [
+    "Atividades_Jur_dico__c",
+    "Atividades Jurídico",
+    "reference"
+  ],
+  [
+    "Atividades_Contrato__c",
+    "Atividades Contrato",
+    "reference"
+  ],
+  [
+    "Atividades_Registro__c",
+    "Atividades Registro",
+    "reference"
+  ],
+  [
+    "Motivo_Distrato__c",
+    "Motivo Distrato",
+    "multipicklist"
+  ],
+  [
+    "Cess_o_de_Direitos__c",
+    "Cessão de Direitos",
+    "boolean"
+  ],
+  [
+    "Tipo_de_Cess_o__c",
+    "Tipo de Cessão",
+    "picklist"
+  ],
+  [
+    "Cliente_1__c",
+    "Cliente 1",
+    "reference"
+  ],
+  [
+    "Cliente_2__c",
+    "Cliente 2",
+    "reference"
+  ],
+  [
+    "Cliente_3__c",
+    "Cliente 3",
+    "reference"
+  ],
+  [
+    "Cliente_4__c",
+    "Cliente 4",
+    "reference"
+  ],
+  [
+    "Responsavel_Pagamento_ITBI__c",
+    "Responsavel Pagamento ITBI",
+    "picklist"
+  ],
+  [
+    "Lider__c",
+    "Líder",
+    "string"
+  ],
+  [
+    "Unidade_Imovel__c",
+    "Unidade",
+    "string"
+  ],
+  [
+    "Quantidade_de_Proponentes__c",
+    "Quantidade de Proponentes",
+    "double"
+  ],
+  [
+    "Disparar_Agendamento_de_Certificado__c",
+    "Disparar  Agendamento de Certificado",
+    "boolean"
+  ],
+  [
+    "Origem_de_Criacao__c",
+    "Origem de criação",
+    "string"
+  ],
+  [
+    "Phase_Duration_Hours__c",
+    "Tempo Total na Fase",
+    "double"
+  ],
+  [
+    "Phase_Entered_At__c",
+    "Data de Entrada na Fase",
+    "datetime"
+  ],
+  [
+    "Phase_Exited_At__c",
+    "Data de Saída da Fase",
+    "datetime"
+  ],
+  [
+    "Previous_Phase__c",
+    "Fase Anterior",
+    "string"
+  ],
+  [
+    "Company_Identifier__c",
+    "Identificador",
+    "string"
+  ],
+  [
+    "Poss_vel_Venda_Duplicada__c",
+    "Possível Venda Duplicada",
+    "boolean"
+  ],
+  [
+    "Status__c",
+    "Status Empreendimento",
+    "picklist"
+  ],
+  [
+    "Mensagem_Erro__c",
+    "Mensagem de erro",
+    "textarea"
+  ],
+  [
+    "Respons_vel_ltima_Atualiza_o__c",
+    "Responsável Última Atualização",
+    "textarea"
+  ],
+  [
+    "ltima_S_ntese__c",
+    "Última Síntese Atualizada",
+    "picklist"
+  ],
+  [
+    "Data_ltima_Atualiza_o_Sintese__c",
+    "Data Última Atualização Síntese",
+    "datetime"
+  ],
+  [
+    "Data_Input__c",
+    "Data de Input",
+    "date"
+  ],
+  [
+    "Status_Input__c",
+    "Status Input",
+    "picklist"
+  ],
+  [
+    "Analista_Respons_vel__c",
+    "Analista Responsável",
+    "reference"
+  ],
+  [
+    "Nome_da_incorporadora__c",
+    "Nome da incorporadora",
+    "string"
+  ],
+  [
+    "Nome_incorporadora__c",
+    "Incorporadora",
+    "textarea"
+  ],
+  [
+    "Enquadramento_de_Processo__c",
+    "Tipo de Processo",
+    "picklist"
+  ],
+  [
+    "Link_Sistema_Incorporadora__c",
+    "Link Sistema Incorporadora",
+    "url"
+  ],
+  [
+    "PipefyId__c",
+    "PipefyId",
+    "string"
+  ],
+  [
+    "Enquadramento_da_Unidade__c",
+    "Enquadramento da Unidade",
+    "textarea"
+  ],
+  [
+    "Status_Negocia_o__c",
+    "Status Negociação",
+    "picklist"
+  ],
+  [
+    "Apoio_Vendas_Incorporadora__c",
+    "Apoio Vendas/Incorporadora",
+    "boolean"
+  ],
+  [
+    "Cliente_Sem_Contato_Retorno__c",
+    "Cliente Sem Contato/Retorno",
+    "boolean"
+  ],
+  [
+    "Cart_rio__c",
+    "Cartório",
+    "string"
+  ],
+  [
+    "Unidade_Incorporadora__c",
+    "Unidade Incorporadora",
+    "string"
+  ],
+  [
+    "Banco_Definido__c",
+    "Banco Definido",
+    "picklist"
+  ],
+  [
+    "Motivo_do_Reagendamento_de_Contrato__c",
+    "Motivo do Reagendamento de Contrato",
+    "picklist"
+  ],
+  [
+    "Motivo_do_Reagendamento_de_Formularios__c",
+    "Motivo do Reagendamento de Formulários",
+    "picklist"
+  ],
+  [
+    "Tipo_de_Aprova_o__c",
+    "Tipo de Aprovação",
+    "picklist"
+  ],
+  [
+    "Motivo_Repasse_Futuro__c",
+    "Motivo Repasse Futuro",
+    "multipicklist"
+  ],
+  [
+    "Data_de_Venda_com_Input__c",
+    "Data de Venda com Input",
+    "date"
+  ],
+  [
+    "Pasta_Com_Documentos__c",
+    "Pasta com Documentos",
+    "string"
+  ]
+]

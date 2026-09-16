@@ -1,0 +1,547 @@
+[
+  [
+    "Id",
+    "ID do contato",
+    "id"
+  ],
+  [
+    "IsDeleted",
+    "Excluído",
+    "boolean"
+  ],
+  [
+    "MasterRecordId",
+    "ID do registro mestre",
+    "reference"
+  ],
+  [
+    "AccountId",
+    "Nome da incorporadora",
+    "reference"
+  ],
+  [
+    "LastName",
+    "Sobrenome",
+    "string"
+  ],
+  [
+    "FirstName",
+    "Primeiro Nome",
+    "string"
+  ],
+  [
+    "Salutation",
+    "Tratamento",
+    "picklist"
+  ],
+  [
+    "Name",
+    "Nome completo",
+    "string"
+  ],
+  [
+    "OtherStreet",
+    "Outra rua",
+    "textarea"
+  ],
+  [
+    "OtherCity",
+    "Outra cidade",
+    "string"
+  ],
+  [
+    "OtherState",
+    "Outro estado/província",
+    "string"
+  ],
+  [
+    "OtherPostalCode",
+    "Outro CEP",
+    "string"
+  ],
+  [
+    "OtherCountry",
+    "Outro país",
+    "string"
+  ],
+  [
+    "OtherLatitude",
+    "Outra latitude",
+    "double"
+  ],
+  [
+    "OtherLongitude",
+    "Outra longitude",
+    "double"
+  ],
+  [
+    "OtherGeocodeAccuracy",
+    "Other Geocode Accuracy",
+    "picklist"
+  ],
+  [
+    "OtherAddress",
+    "Outro endereço",
+    "address"
+  ],
+  [
+    "MailingStreet",
+    "Rua de correspondência",
+    "textarea"
+  ],
+  [
+    "MailingCity",
+    "Cidade de correspondência",
+    "string"
+  ],
+  [
+    "MailingState",
+    "Estado/Província de correspondência",
+    "string"
+  ],
+  [
+    "MailingPostalCode",
+    "CEP de correspondência",
+    "string"
+  ],
+  [
+    "MailingCountry",
+    "País de correspondência",
+    "string"
+  ],
+  [
+    "MailingLatitude",
+    "Latitude de correspondência",
+    "double"
+  ],
+  [
+    "MailingLongitude",
+    "Longitude de correspondência",
+    "double"
+  ],
+  [
+    "MailingGeocodeAccuracy",
+    "Mailing Geocode Accuracy",
+    "picklist"
+  ],
+  [
+    "MailingAddress",
+    "Endereço de correspondência",
+    "address"
+  ],
+  [
+    "Phone",
+    "Telefone comercial",
+    "phone"
+  ],
+  [
+    "Fax",
+    "Fax comercial",
+    "phone"
+  ],
+  [
+    "MobilePhone",
+    "Celular",
+    "phone"
+  ],
+  [
+    "HomePhone",
+    "Telefone residencial",
+    "phone"
+  ],
+  [
+    "OtherPhone",
+    "Outro telefone",
+    "phone"
+  ],
+  [
+    "AssistantPhone",
+    "Telefone do assistente",
+    "phone"
+  ],
+  [
+    "ReportsToId",
+    "Reporta-se ao ID",
+    "reference"
+  ],
+  [
+    "Email",
+    "Email",
+    "email"
+  ],
+  [
+    "Title",
+    "Cargo",
+    "string"
+  ],
+  [
+    "Department",
+    "Departamento",
+    "string"
+  ],
+  [
+    "AssistantName",
+    "Nome do assistente",
+    "string"
+  ],
+  [
+    "LeadSource",
+    "Origem do lead",
+    "picklist"
+  ],
+  [
+    "Birthdate",
+    "Data de nascimento",
+    "date"
+  ],
+  [
+    "Description",
+    "Descrição do contato",
+    "textarea"
+  ],
+  [
+    "OwnerId",
+    "ID do proprietário",
+    "reference"
+  ],
+  [
+    "HasOptedOutOfEmail",
+    "Recusa de email",
+    "boolean"
+  ],
+  [
+    "HasOptedOutOfFax",
+    "Recusa de fax",
+    "boolean"
+  ],
+  [
+    "DoNotCall",
+    "Não chamar",
+    "boolean"
+  ],
+  [
+    "CreatedDate",
+    "Data de criação",
+    "datetime"
+  ],
+  [
+    "CreatedById",
+    "Criado pelo ID",
+    "reference"
+  ],
+  [
+    "LastModifiedDate",
+    "Data da última modificação",
+    "datetime"
+  ],
+  [
+    "LastModifiedById",
+    "Última modificação pelo ID",
+    "reference"
+  ],
+  [
+    "SystemModstamp",
+    "Modstamp do sistema",
+    "datetime"
+  ],
+  [
+    "LastActivityDate",
+    "Última atividade",
+    "date"
+  ],
+  [
+    "LastCURequestDate",
+    "Data da última solicitação do Stay-in-Touch",
+    "datetime"
+  ],
+  [
+    "LastCUUpdateDate",
+    "Data do último salvamento do Stay-in-Touch",
+    "datetime"
+  ],
+  [
+    "LastViewedDate",
+    "Data da última visualização",
+    "datetime"
+  ],
+  [
+    "LastReferencedDate",
+    "Última data citada",
+    "datetime"
+  ],
+  [
+    "EmailBouncedReason",
+    "Motivo da devolução do email",
+    "string"
+  ],
+  [
+    "EmailBouncedDate",
+    "Data da devolução do email",
+    "datetime"
+  ],
+  [
+    "IsEmailBounced",
+    "Email devolvido",
+    "boolean"
+  ],
+  [
+    "PhotoUrl",
+    "URL da foto",
+    "url"
+  ],
+  [
+    "Jigsaw",
+    "Chave Data.com",
+    "string"
+  ],
+  [
+    "JigsawContactId",
+    "Jigsaw Contact ID",
+    "string"
+  ],
+  [
+    "Pronouns",
+    "Pronome",
+    "picklist"
+  ],
+  [
+    "GenderIdentity",
+    "Identidade de gênero",
+    "picklist"
+  ],
+  [
+    "IsPriorityRecord",
+    "Importante",
+    "boolean"
+  ],
+  [
+    "CPF__c",
+    "CPF do Cliente",
+    "string"
+  ],
+  [
+    "RG__c",
+    "RG",
+    "string"
+  ],
+  [
+    "Estado_Civil__c",
+    "Estado Civil",
+    "picklist"
+  ],
+  [
+    "Nome_do_Conjuge__c",
+    "Nome do Cônjuge",
+    "string"
+  ],
+  [
+    "CPF_do_Conjuge__c",
+    "CPF do Cônjuge",
+    "string"
+  ],
+  [
+    "Link_de_Documentos__c",
+    "Link de Documentos",
+    "url"
+  ],
+  [
+    "Link_OCTA__c",
+    "Link OCTA",
+    "url"
+  ],
+  [
+    "Tipo_de_Conta__c",
+    "Tipo de Conta (Incorp/Constr)",
+    "picklist"
+  ],
+  [
+    "Codigo_Caixa_Correspondente__c",
+    "Código Caixa Correspondente",
+    "string"
+  ],
+  [
+    "Status_de_Integracao_API__c",
+    "Status de Integração API",
+    "picklist"
+  ],
+  [
+    "Score_de_Conformidade__c",
+    "Score de Conformidade (%)",
+    "double"
+  ],
+  [
+    "Cumprimento_SLA__c",
+    "% Cumprimento SLA",
+    "double"
+  ],
+  [
+    "NPS__c",
+    "NPS",
+    "double"
+  ],
+  [
+    "Retrabalho__c",
+    "% Retrabalho",
+    "double"
+  ],
+  [
+    "Regime__c",
+    "Regime",
+    "picklist"
+  ],
+  [
+    "Data_Casamento__c",
+    "Data Casamento",
+    "date"
+  ],
+  [
+    "Telefone_2__c",
+    "Telefone 2",
+    "phone"
+  ],
+  [
+    "Numero__c",
+    "Número",
+    "double"
+  ],
+  [
+    "Identificador__c",
+    "Identificador",
+    "textarea"
+  ],
+  [
+    "Data_de_Nascimento__c",
+    "Data de Nascimento",
+    "date"
+  ],
+  [
+    "Lead__c",
+    "Lead",
+    "reference"
+  ],
+  [
+    "Estado__c",
+    "Estado Civil",
+    "picklist"
+  ],
+  [
+    "Conjuge__c",
+    "Cônjuge",
+    "string"
+  ],
+  [
+    "Gerente__c",
+    "Gerente",
+    "reference"
+  ],
+  [
+    "Conjuges__c",
+    "Cônjuge",
+    "reference"
+  ],
+  [
+    "An_lise_de_Cr_dito__c",
+    "Análise de Crédito",
+    "reference"
+  ],
+  [
+    "Conta_Corrente_e_D_gito__c",
+    "Conta Corrente e Dígito",
+    "textarea"
+  ],
+  [
+    "Ag_ncia__c",
+    "Agência",
+    "textarea"
+  ],
+  [
+    "Primeira_Aquisi_o_SFH__c",
+    "Primeira Aquisição SFH?",
+    "picklist"
+  ],
+  [
+    "Tipo_Enquadramento__c",
+    "Tipo Enquadramento",
+    "picklist"
+  ],
+  [
+    "Profiss_o__c",
+    "Profissão",
+    "textarea"
+  ],
+  [
+    "rg_o_Emissor__c",
+    "Órgão Emissor",
+    "picklist"
+  ],
+  [
+    "Categoria__c",
+    "Categoria",
+    "picklist"
+  ],
+  [
+    "Tipo_de_Logradouro__c",
+    "Tipo de Logradouro",
+    "picklist"
+  ],
+  [
+    "Investidor__c",
+    "Investidor",
+    "boolean"
+  ],
+  [
+    "Empresa__c",
+    "Empresa",
+    "picklist"
+  ],
+  [
+    "Turbo_WPP__c",
+    "Turbo WPP",
+    "boolean"
+  ],
+  [
+    "Consulta__c",
+    "Consulta",
+    "boolean"
+  ],
+  [
+    "Bairro__c",
+    "Bairro",
+    "textarea"
+  ],
+  [
+    "CEP__c",
+    "CEP",
+    "textarea"
+  ],
+  [
+    "Logradouro__c",
+    "Logradouro",
+    "textarea"
+  ],
+  [
+    "Superintendente__c",
+    "Superintendente",
+    "reference"
+  ],
+  [
+    "Diretor__c",
+    "Diretor",
+    "reference"
+  ],
+  [
+    "CNPJ__c",
+    "CNPJ",
+    "textarea"
+  ],
+  [
+    "Equipe_de_Vendas__c",
+    "Equipe de Vendas",
+    "reference"
+  ],
+  [
+    "Identifica_o_Incorporadora__c",
+    "Identificação Incorporadora",
+    "string"
+  ]
+]
