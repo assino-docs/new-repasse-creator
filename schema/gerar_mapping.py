@@ -2,6 +2,7 @@
 Repasse__c e Contact. Pode ser apagado depois de revisado — não faz parte do
 fluxo de importação em si."""
 import csv
+from pathlib import Path
 
 linhas = []
 
@@ -106,7 +107,7 @@ for slot in (1, 2, 3, 4):
         f"proponente{slot}.nome / proponente{slot}.cpf", "alta",
         "A API grava o nome/CPF também como texto direto no Repasse__c, além do lookup para o Contact.")
 
-with open("mapping.csv", "w", newline="", encoding="utf-8-sig") as f:
+with open(Path(__file__).resolve().parent / "mapping.csv", "w", newline="", encoding="utf-8-sig") as f:
     w = csv.writer(f, delimiter=";")
     w.writerow(["coluna_planilha", "objeto_destino", "campo_destino", "campo_api_repasse", "confianca", "observacao"])
     w.writerows(linhas)
