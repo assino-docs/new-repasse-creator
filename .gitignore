@@ -1,3 +1,11 @@
 .env
 __pycache__/
 *.pyc
+
+# Dados sensíveis (CPF, nomes, contatos) — nunca versionar
+lotes/
+*.xlsx
+*.xls
+*.csv
+!schema/mapping.csv
+data/
